@@ -5,7 +5,7 @@ import "./App.css";
 import ChatBox from "./components/chat/ChatBox";
 import MessageInput from "./components/chat/MessageInput";
 import Nav from "./components/nav/nav";
-import VNav from "./components/VNav/VNav";
+import VNav from "./components/vnav/VNav";
 
 import { api_post, pushData } from "./ox_db/log";
 

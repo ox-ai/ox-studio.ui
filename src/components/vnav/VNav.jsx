@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './VNav.css';  // Import the CSS file for styling
 
 const VNav = () => {
-    const [isShrunk, setIsShrunk] = useState(false);
+    const [isShrunk, setIsShrunk] = useState(true);
 
     const toggleNavbar = () => {
         setIsShrunk(!isShrunk);

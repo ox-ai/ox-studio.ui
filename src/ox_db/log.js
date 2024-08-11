@@ -1,4 +1,4 @@
-const apiUrlHead = "http://127.0.0.1:8000";
+const apiUrlHead= `http://${window.location.hostname}:8000`; // Assuming FastAPI is running on port 8000
 
 export async function api_post(script) {
     const url = `${apiUrlHead}/run?script=${encodeURIComponent(script)}`;

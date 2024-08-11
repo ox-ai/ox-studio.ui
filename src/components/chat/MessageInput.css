@@ -33,7 +33,7 @@
   align-self: center;
   padding: 10px 20px;
   border: none;
-  background-color: #08981D;
+  background-color: #08981d;
   color: rgb(10, 10, 10);
   border-radius: 5px;
   cursor: pointer;
@@ -41,4 +41,54 @@
 
 .message-input button:hover {
   background-color: #47c25f;
+}
+
+
+
+/* Tablet View (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  .input-box {
+    width: 90%; /* Adjust the width to fit the tablet screen */
+  }
+
+  .message-input textarea {
+    width: 100%; /* Full width to make use of the available space */
+    height: 35px; /* Increase height for better touch interaction */
+    padding: 8px; /* Adjust padding */
+    margin-right: 5px; /* Reduce margin */
+  }
+
+  .message-input button {
+    height: 40px; /* Keep the button size consistent */
+    padding: 10px 15px; /* Adjust padding for the button */
+  }
+}
+
+/* Mobile View (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+  .input-box {
+    width: 100%; /* Full width for mobile screens */
+    padding: 0 10px; /* Add padding to the sides */
+    left: 0;
+  }
+
+  .message-input {
+ 
+    padding: 10px; /* Increase padding for easier touch interaction */
+  }
+
+  .message-input textarea {
+   
+    width: 100%; /* Full width */
+    height: 45px; /* Increase height for mobile screens */
+    padding: 10px; /* Keep padding consistent */
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 10px; /* Add margin at the bottom */
+  }
+
+  .message-input button {
+    width: 60px; /* Full width button */
+    height: 49px; /* Increase button height for easier tapping */
+    padding: 10px 10px; /* Adjust padding for the button */
+  }
 }

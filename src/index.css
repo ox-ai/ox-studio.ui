@@ -12,6 +12,10 @@ body {
   display: flex;
   place-items: center;
   min-width: 320px;
+
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
 }
 
 h1 {

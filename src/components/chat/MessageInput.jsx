@@ -31,7 +31,7 @@ const MessageInput = ({ onSendMessage }) => {
           onKeyDown={handleKeyPress}
           placeholder="Type a message..."
         />
-        <button onClick={handleSend}>Send</button>
+        <button onClick={handleSend}>send</button>
       </div>
     </div>
   );

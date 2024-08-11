@@ -12,7 +12,7 @@
 }
 
 .vertical-navbar.shrunk {
-    width: 60px;                  /* Shrunk width of the navbar */
+    width: 0px;                  /* Shrunk width of the navbar */
 }
 
 .toggle-btn {
@@ -44,4 +44,5 @@
 
 .vertical-navbar.shrunk .toggle-btn {
     text-align: center;
+    width: 50px;
 }

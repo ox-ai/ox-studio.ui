@@ -2,28 +2,19 @@
 
 
 
-  background-color: #13161b;
-  margin: auto;
+  background-color: #000000;
 
 }
 
 
 
 
-
-
-
-
-
-
-
 .chat-app {
-
-
   display: flex;
- 
-  align-items: center;
-  margin-top: 40px;
-  background-color: #13161b;
+  justify-content: center; 
+  align-items: center; 
+
+  margin-top: 45px;
+  background-color: #000000;
 }
 
