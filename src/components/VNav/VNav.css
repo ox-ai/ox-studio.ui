@@ -1,0 +1,47 @@
+.vertical-navbar {
+    width: 200px;                 /* Initial width of the navbar */
+    height: 100vh;                /* Full height of the viewport */
+    background-color: #111111;       /* Background color of the navbar */
+    display: flex;
+    flex-direction: column;       /* Stack items vertically */
+    justify-content: start;       /* Align items at the top */
+    position: fixed;              /* Fix the navbar to the side of the screen */
+    top: 0;                       /* Align with the top of the screen */
+    left: 0;                      /* Align with the left of the screen */
+    transition: width 0.3s;       /* Smooth transition for width */
+}
+
+.vertical-navbar.shrunk {
+    width: 60px;                  /* Shrunk width of the navbar */
+}
+
+.toggle-btn {
+    height: 50px;
+    background-color: #222121;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+}
+
+.nav-link {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    text-align: center;
+    transition: opacity 0.3s;     /* Smooth transition for opacity */
+}
+
+.vertical-navbar.shrunk .nav-link {
+    opacity: 0;                   /* Hide text when shrunk */
+}
+
+.vertical-navbar.shrunk .toggle-btn {
+    text-align: center;
+}

@@ -1,0 +1,29 @@
+#root {
+
+
+
+  background-color: #13161b;
+  margin: auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.chat-app {
+
+
+  display: flex;
+ 
+  align-items: center;
+  margin-top: 40px;
+  background-color: #13161b;
+}
+
