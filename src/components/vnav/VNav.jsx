@@ -13,10 +13,11 @@ const VNav = () => {
             <button className="toggle-btn" onClick={toggleNavbar}>
                 {isShrunk ? '☰' : '✕'}
             </button>
-            <a href="#home" className="nav-link">Home</a>
-            <a href="#services" className="nav-link">Services</a>
-            <a href="#about" className="nav-link">About</a>
-            <a href="#contact" className="nav-link">Contact</a>
+
+            <a href="#server-setting" className="nav-link">server-setting</a>
+            <a href="#server-api" className="nav-link">server api</a>
+            <a href="#ox-engine" className="nav-link">ox-engine</a>
+            <a href="#llm-server" className="nav-link">llm-server</a>
         </div>
     );
 };

@@ -7,7 +7,7 @@ import ChatBox from "./components/chat/ChatBox";
 import MessageInput from "./components/chat/MessageInput";
 import Nav from "./components/nav/nav";
 
-import { push, pushData } from "./ox_db/log";
+import { push } from "./ox_db/log";
 
 function ChatApp() {
     const [count, setCount] = useState(0);

@@ -7,7 +7,7 @@ import MessageInput from "./components/chat/MessageInput";
 import Nav from "./components/nav/nav";
 import VNav from "./components/vnav/VNav";
 
-import { api_post, pushData } from "./ox_db/log";
+import { api_post } from "./ox_db/log";
 
 function App() {
   

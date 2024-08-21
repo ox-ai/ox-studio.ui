@@ -1,14 +1,15 @@
-const apiUrlHead= `http://${window.location.hostname}:8000`; // Assuming FastAPI is running on port 8000
+const apiUrlHead = `http://${window.location.hostname}:8008`; // Updated to match the curl command's port
 
 export async function api_post(script) {
-    const url = `${apiUrlHead}/run?script=${encodeURIComponent(script)}`;
-    
+    const url = `${apiUrlHead}/shell?script=${encodeURIComponent(script)}`;
+
     try {
         const response = await fetch(url, {
             method: 'POST',
             headers: {
                 'accept': 'application/json',
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'x-api-key': 'lok' // Added API key as per curl command
             },
             body: ''  // Sending an empty body as per the curl command
         });
@@ -22,10 +23,10 @@ export async function api_post(script) {
 
         const result = await response.json();
         const finalRes = {
-            head:'ox-db : ',
-            res:result
-        }
-        return finalRes
+            head: 'ox-db : ',
+            res: result
+        };
+        return finalRes;
 
     } catch (error) {
         console.error('Error:', error);
@@ -34,15 +35,4 @@ export async function api_post(script) {
 }
 
 
-// Example usage:
-export let pushData = {
-    data: "data",
-    embeddings: true,
-    description: "from ox-ai.studio api call",
-    metadata: { source:"ox-ai.studio.api" },
-    key: "key"
-};
 
-// push(pushData).then(response => {
-//     console.log('Response:', response);
-// });
