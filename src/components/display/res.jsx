@@ -38,7 +38,7 @@ const DisplayObject = ({ data }) => {
     };
 
     return (
-        <div style={{ padding: '20px', border: '1px solid #ccc', borderRadius: '5px' ,overflowX: "scroll"}}>
+        <div style={{ padding: '20px', border: '1px solid #ccc', borderRadius: '5px' }}>
             <h3>Data Details</h3>
             {renderObject(data)}
         </div>
