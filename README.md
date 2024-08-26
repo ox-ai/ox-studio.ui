@@ -15,18 +15,21 @@ npm run dev
 npm run dev -- --host
 ```
 
-##  db server:
+##  ox-db server:
 
-### start database shell
+### start database server 
 
-> refere [ox-db](https://github.com/ox-ai/ox-db.git) repo for instation process
+> refere [ox-db](https://github.com/ox-ai/ox-db.git) repo for instantion process
 
 ```
 pip install git+https://github.com/ox-ai/ox-db.git
 ```
-
 ```
-uvicorn ox_db.shell.log_api:app
+ox_db.server.log --apikey "ox-db-prime" --host --port 8008
+```
+or
+```
+python -m ox_db.server.log --apikey "ox-db-prime" --host --port 8008
 ```
 
 ## page ui :
